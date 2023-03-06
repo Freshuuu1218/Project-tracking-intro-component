@@ -66,3 +66,81 @@ nav #spacer{
 nav #login{
     color: var(--pattern);
 }
+main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.pattern{
+    background-color: var(--button-text);
+    height: 53vh;
+    width: 50vw;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 4em;
+}
+#image{
+    width: 100%;
+    margin-top: 3.5em;
+}
+#image img{
+    width: 160%;
+    margin-left: -1.25em;
+}
+#text{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
+small{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1em;
+    color: var(--pattern);
+    display: flex;
+    align-items: center;
+}
+small span{
+    color: white;
+    background-color: var(--main-text-color);
+    border-radius: 2em;
+    padding: .2em .75em;
+    font-weight: 700;
+    letter-spacing: .03em;
+    margin-right: 1em;
+}
+#text h1{
+    margin-top: .35em;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    line-height: 1.05em;
+}
+#text p{
+    font-family: 'Barlow', sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 1.1em;
+    width: 90%;
+    line-height: 1.4em;
+    margin: 1em 0 1.5em;
+}
+#text .text-bottom{
+    display: flex;
+}
+.text-bottom button{
+    background-color: var(--button-background);
+    color: white;
+    border: 0;
+    border-radius: .5em;
+    padding: .9em 1.75em;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+}
+.text-bottom small{
+    font-size: .8em;
+    margin-left: 1.75em;
+}

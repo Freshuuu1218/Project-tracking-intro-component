@@ -10,3 +10,13 @@ menuBtn.addEventListener('click',()=>{
         nav.style.display = 'none';
     }
 })
+
+window.addEventListener('resize',()=>{
+    if(window.innerWidth > 768){
+        menuBtn.style.display = 'none';
+        nav.style.display = 'flex';
+    }else{
+        menuBtn.style.display = 'flex';
+        nav.style.display = 'none';
+    }
+})

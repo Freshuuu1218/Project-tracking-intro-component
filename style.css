@@ -15,14 +15,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    padding: 2.5em 2em;
-}
 header{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2em 2.5em 0;
 }
 header .logo img{
     width: 1.5em;
@@ -30,11 +28,11 @@ header .logo img{
 /* mobile menu */
 nav{
     position: absolute;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     z-index: 100;
     background-color: white;
-    top: 4em;
+    top: 6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,13 +81,16 @@ main{
 #image{
     width: 100%;
     margin-top: 3.5em;
+    margin: 3.5em 0 0 0;
+    overflow: hidden;
 }
 #image img{
-    width: 160%;
-    margin-left: -1.25em;
+    width: 132%;
+    margin-left: 1em;
 }
 #text{
     margin-top: 5em;
+    margin: 5em 2.5em 0;
     display: flex;
     flex-direction: column;
 }
@@ -143,4 +144,83 @@ small span{
 .text-bottom small{
     font-size: .8em;
     margin-left: 1.75em;
+}
+
+@media(min-width:768px){
+    body {
+        padding: 4em 0;
+    }
+    header {
+        padding: 0 10em;
+    }
+    header .logo img {
+        width: 1.85em;
+    }
+    /* desktop menu */
+    nav {
+        position: relative;
+        width: 50%;
+        box-shadow: none;
+        background-color: transparent;
+        top: 0;
+        display: flex;
+        margin-right: 0;
+        margin-left: auto;
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1em;
+    }
+    nav ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    nav ul li:nth-child(2) {
+        margin: 0 2.5em;
+    }
+    nav #spacer {
+        width: .35em;
+        height: .35em;
+        border-radius: 50%;
+        margin: 0 3em;
+    }
+    main{
+        flex-direction: row;
+        margin-top: 3.5em;
+    }
+    #image {
+        width: 52.5%;
+    }
+    #image img {
+        width: 135%;
+    }
+    #text {
+        width: 47.5%;
+        margin: 6.5em 0 0 10em;
+    }  
+    #text h1 {
+        width: 90%;
+        margin-top: .25em;
+        font-size: 4em;
+    }
+    #text p {
+        width: 45%;
+        line-height: 1.5em;
+        margin: 1.5em 0 3.5em;
+    }
+    .text-bottom button {
+        font-size: 1em;
+        font-weight: 700;
+        padding: .9em 1.75em;
+    }
+    .text-bottom button:hover {
+        cursor: pointer;
+        opacity: .75;
+    }
+    .text-bottom small {
+        font-size: .9em;
+    }
 }
